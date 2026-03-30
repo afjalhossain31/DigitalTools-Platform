@@ -8,11 +8,11 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#09162f] text-white py-14">
+    <footer className="bg-[#09162f] text-white py-12 sm:py-14">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 border-b border-white/12 pb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 border-b border-white/12 pb-10">
           <div className="space-y-4 lg:col-span-1">
-            <h3 className="text-5xl font-bold leading-none">
+            <h3 className="text-4xl sm:text-5xl font-bold leading-none">
               DigiTools
             </h3>
             <p className="text-sm text-[#9aa8bf] leading-6">
@@ -74,7 +74,7 @@ const Footer = () => {
           <p>
             © 2026 DigiTools. All rights reserved.
           </p>
-          <div className="flex items-center gap-5">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-5">
             <a href="#" className="hover:text-white transition">
               Privacy Policy
             </a>

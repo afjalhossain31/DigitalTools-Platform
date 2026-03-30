@@ -2,10 +2,10 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-14 sm:py-20 lg:py-24">
       <div className="container mx-auto px-4">
       <div className="text-center flex gap-3 flex-col mb-12">
-        <h1 className="font-extrabold text-5xl text-[#101727] leading-tight">
+        <h1 className="font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#101727] leading-tight">
           Simple, Transparent Pricing
         </h1>
         <p className="text-[#7a8699] text-sm">
@@ -21,7 +21,7 @@ const Pricing = () => {
               <p className="text-sm text-[#7a8699]">
                 Perfect for getting started
               </p>
-              <p className="text-5xl font-bold text-[#101727]">
+              <p className="text-4xl sm:text-5xl font-bold text-[#101727]">
                 $0<span className="text-base text-[#7a8699] font-normal">/Month</span>
               </p>
             </div>
@@ -118,7 +118,7 @@ const Pricing = () => {
               <p className="text-sm text-white/85">
                 Best for professionals
               </p>
-              <p className="text-5xl text-white font-bold">
+              <p className="text-4xl sm:text-5xl text-white font-bold">
                 $29<span className="text-base text-white/80 font-normal">/Month</span>
               </p>
             </div>
@@ -245,7 +245,7 @@ const Pricing = () => {
               <p className="text-sm text-[#7a8699]">
                 For teams and businesses
               </p>
-              <p className="text-5xl font-bold text-[#101727]">
+              <p className="text-4xl sm:text-5xl font-bold text-[#101727]">
                 $99<span className="text-base text-[#7a8699] font-normal">/Month</span>
               </p>
             </div>

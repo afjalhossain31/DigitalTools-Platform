@@ -1,7 +1,7 @@
 import { LucideShoppingCart, Menu, X } from "lucide-react";
 import React, { useState } from "react";
 
-const NavBar = () => {
+const NavBar = ({ cartCount = 0 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -38,7 +38,7 @@ const NavBar = () => {
               <div className="indicator">
                 <LucideShoppingCart size={24} className="text-gray-700" />
                 <span className="badge badge-sm bg-purple-600 border-0 text-white indicator-item">
-                  2
+                  {cartCount}
                 </span>
               </div>
             </button>
@@ -60,7 +60,7 @@ const NavBar = () => {
               <div className="indicator">
                 <LucideShoppingCart size={24} className="text-gray-700" />
                 <span className="badge badge-sm bg-purple-600 border-0 text-white indicator-item">
-                  2
+                  {cartCount}
                 </span>
               </div>
             </button>

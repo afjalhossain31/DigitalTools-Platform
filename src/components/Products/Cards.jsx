@@ -6,7 +6,7 @@ import socialImg from "../../assets/products/social-media.png";
 import operationImg from "../../assets/products/operation.png";
 import shoppingImg from "../../assets/products/shopping-cart.png";
 
-const Cards = () => {
+const Cards = ({ onAddToCart, cartItems = [] }) => {
   const products = [
     {
       id: 1,
@@ -108,10 +108,16 @@ const Cards = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {products.map((product) => (
-          <div key={product.id} className="card bg-white shadow-lg hover:shadow-xl transition-shadow rounded-2xl overflow-hidden">
-            <div className="card-body p-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
+        {products.map((product) => {
+          const isInCart = cartItems.some((item) => item.id === product.id);
+
+          return (
+          <div
+            key={product.id}
+            className="card bg-white shadow-lg rounded-2xl overflow-hidden border border-transparent hover:border-[#e9dcff] hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.01] transition-all duration-300"
+          >
+            <div className="card-body p-5 sm:p-6">
               {/* Badge and Icon */}
               <div className="flex justify-between items-start gap-3 mb-4">
                 <div className={`p-4 bg-linear-to-br ${product.bgColor} rounded-xl`}>
@@ -124,7 +130,7 @@ const Cards = () => {
 
               {/* Title and Description */}
               <div className="space-y-2 mb-4">
-                <h2 className="text-xl font-bold text-gray-900">{product.name}</h2>
+                <h2 className="text-lg sm:text-xl font-bold text-gray-900">{product.name}</h2>
                 <p className="text-sm text-gray-600 line-clamp-2">
                   {product.description}
                 </p>
@@ -132,7 +138,7 @@ const Cards = () => {
 
               {/* Price */}
               <div className="mb-6">
-                <p className="text-3xl font-bold text-gray-900">
+                <p className="text-2xl sm:text-3xl font-bold text-gray-900">
                   {product.price}
                   <span className="text-sm text-gray-500 font-normal">{product.period}</span>
                 </p>
@@ -157,13 +163,31 @@ const Cards = () => {
 
               {/* Button */}
               <div>
-                <button className="btn btn-primary btn-block rounded-xl bg-linear-to-r from-[#9514fa] to-[#7c3aed] hover:from-[#7c3aed] hover:to-[#9514fa] text-white border-none font-bold text-base">
-                  Buy Now
+                <button
+                  className={`btn btn-block rounded-xl border-none font-bold text-base ${
+                    isInCart
+                      ? "bg-green-600 hover:bg-green-600 text-white"
+                      : "bg-linear-to-r from-[#9514fa] to-[#7c3aed] hover:from-[#7c3aed] hover:to-[#9514fa] text-white"
+                  }`}
+                  onClick={() => {
+                    if (isInCart) {
+                      return;
+                    }
+                    onAddToCart({
+                      id: product.id,
+                      name: product.name,
+                      price: Number.parseInt(product.price.replace("$", ""), 10),
+                      image: product.image,
+                    });
+                  }}
+                >
+                  {isInCart ? "Added to Cart" : "Buy Now"}
                 </button>
               </div>
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

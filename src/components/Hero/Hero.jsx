@@ -5,33 +5,33 @@ import dotImg from "../../assets/dot.svg";
 
 const Hero = () => {
   return (
-    <div className="bg-linear-to-br from-white via-[#f8f9fb] to-[#f0f4ff] min-h-screen flex items-center relative overflow-hidden">
+    <section className="bg-linear-to-br from-white via-[#f8f9fb] to-[#f0f4ff] min-h-screen flex items-center relative overflow-hidden py-16 lg:py-8">
       {/* Decorative circles */}
       <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-200 rounded-full opacity-20 blur-3xl"></div>
       <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-blue-200 rounded-full opacity-10 blur-3xl"></div>
       
       <div className="container mx-auto px-4 z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
-            <div className="flex bg-primary-content w-fit rounded-full pt-2 pb-2 pl-4 pr-4 text-base">
+          <div className="space-y-6 lg:space-y-8">
+            <div className="flex bg-primary-content w-fit rounded-full py-1.5 px-3 sm:py-2 sm:px-4 text-sm sm:text-base">
               <img src={dotImg} alt="dot" />
-              <p className="text-base pl-2 bg-linear-to-l from-[#9514fa] to-[#4f39f6] bg-clip-text text-transparent font-semibold">
+              <p className="text-sm sm:text-base pl-2 bg-linear-to-l from-[#9514fa] to-[#4f39f6] bg-clip-text text-transparent font-semibold">
                 New: AI-Powered Tools Available
               </p>
             </div>
 
-            <h1 className="text-6xl lg:text-7xl font-extrabold text-[#101727] leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-[#101727] leading-tight">
               Supercharge Your <br />
               Digital Workflow
             </h1>
             
-            <p className="text-lg text-[#627382] leading-relaxed">
+            <p className="text-base sm:text-lg text-[#627382] leading-relaxed max-w-xl">
               Access premium AI tools, design assets, templates, and
               productivity software—all in one place. Start creating faster today.
             </p>
             
-            <div className="flex gap-4 flex-wrap">
+            <div className="flex gap-3 sm:gap-4 flex-wrap">
               <button className="btn btn-primary rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r text-base font-semibold text-white border-none">
                 Explore Products
               </button>
@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative h-96 lg:h-125 flex items-center justify-center">
+          <div className="relative h-72 sm:h-96 lg:h-125 flex items-center justify-center">
             <div className="relative w-full h-full">
               <img 
                 src={bannerImg} 
@@ -55,7 +55,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
