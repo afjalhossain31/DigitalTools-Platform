@@ -1,127 +1,80 @@
 import React from "react";
-import { LucideFacebook, LucideTwitter, LucideLinkedin, LucideInstagram } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faYoutube,
+  faFacebookF,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#101727] text-white pt-20 pb-10">
+    <footer className="bg-[#09162f] text-white py-14">
       <div className="container mx-auto px-4">
-        {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          {/* Brand */}
-          <div className="space-y-4">
-            <h3 className="text-3xl font-bold bg-linear-to-l from-[#9514fa] to-[#4f39f6] bg-clip-text text-transparent">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 border-b border-white/12 pb-10">
+          <div className="space-y-4 lg:col-span-1">
+            <h3 className="text-5xl font-bold leading-none">
               DigiTools
             </h3>
-            <p className="text-neutral-400">
-              Supercharge your digital workflow with premium tools and AI-powered solutions.
+            <p className="text-sm text-[#9aa8bf] leading-6">
+              Premium digital tools for creators,
+              <br />
+              professionals, and businesses. Work smarter
+              <br />
+              with our suite of powerful tools.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="hover:text-purple-500 transition">
-                <LucideFacebook size={20} />
+          </div>
+
+          <div>
+            <h4 className="text-base font-semibold mb-3">Product</h4>
+            <ul className="space-y-2 text-sm text-[#9aa8bf]">
+              <li><a href="#" className="hover:text-white transition">Features</a></li>
+              <li><a href="#" className="hover:text-white transition">Pricing</a></li>
+              <li><a href="#" className="hover:text-white transition">Templates</a></li>
+              <li><a href="#" className="hover:text-white transition">Integrations</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-base font-semibold mb-3">Company</h4>
+            <ul className="space-y-2 text-sm text-[#9aa8bf]">
+              <li><a href="#" className="hover:text-white transition">About</a></li>
+              <li><a href="#" className="hover:text-white transition">Blog</a></li>
+              <li><a href="#" className="hover:text-white transition">Careers</a></li>
+              <li><a href="#" className="hover:text-white transition">Press</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-base font-semibold mb-3">Resources</h4>
+            <ul className="space-y-2 text-sm text-[#9aa8bf]">
+              <li><a href="#" className="hover:text-white transition">Documentation</a></li>
+              <li><a href="#" className="hover:text-white transition">Help Center</a></li>
+              <li><a href="#" className="hover:text-white transition">Community</a></li>
+              <li><a href="#" className="hover:text-white transition">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-base font-semibold mb-3">Social Links</h4>
+            <div className="flex items-center gap-3 pt-1">
+              <a href="#" className="w-8 h-8 rounded-full bg-white text-[#09162f] flex items-center justify-center hover:opacity-90">
+                <FontAwesomeIcon icon={faYoutube} className="text-[13px]" />
               </a>
-              <a href="#" className="hover:text-purple-500 transition">
-                <LucideTwitter size={20} />
+              <a href="#" className="w-8 h-8 rounded-full bg-white text-[#09162f] flex items-center justify-center hover:opacity-90">
+                <FontAwesomeIcon icon={faFacebookF} className="text-[12px]" />
               </a>
-              <a href="#" className="hover:text-purple-500 transition">
-                <LucideLinkedin size={20} />
-              </a>
-              <a href="#" className="hover:text-purple-500 transition">
-                <LucideInstagram size={20} />
+              <a href="#" className="w-8 h-8 rounded-full bg-white text-[#09162f] flex items-center justify-center hover:opacity-90">
+                <FontAwesomeIcon icon={faXTwitter} className="text-[12px]" />
               </a>
             </div>
           </div>
-
-          {/* Products */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-bold">Products</h4>
-            <ul className="space-y-2 text-neutral-400">
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Content Writer
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Design Tools
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Portfolio Builder
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Pricing
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-bold">Company</h4>
-            <ul className="space-y-2 text-neutral-400">
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-bold">Support</h4>
-            <ul className="space-y-2 text-neutral-400">
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Help Center
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Support
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-neutral-700 my-8"></div>
-
-        {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-neutral-400 text-sm">
-            &copy; 2026 DigiTools. All rights reserved.
+        <div className="flex flex-col md:flex-row justify-between items-center gap-3 pt-6 text-xs text-[#8f9db6]">
+          <p>
+            © 2026 DigiTools. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm text-neutral-400 mt-4 md:mt-0">
+          <div className="flex items-center gap-5">
             <a href="#" className="hover:text-white transition">
               Privacy Policy
             </a>
@@ -129,7 +82,7 @@ const Footer = () => {
               Terms of Service
             </a>
             <a href="#" className="hover:text-white transition">
-              Cookie Policy
+              Cookies
             </a>
           </div>
         </div>

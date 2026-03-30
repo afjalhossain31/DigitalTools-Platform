@@ -2,34 +2,30 @@ import React from "react";
 
 const ReadyTransform = () => {
   return (
-    <div>
-      <div>
-        <div className="bg-base-200 bg-linear-to-l from-[#9514fa] to-[#4f39f6] pt-30 pb-30">
-          <div className="text-center space-y-4">
-            <h1 className="font-extrabold text-5xl text-white">
-              Ready to Transform Your Workflow?
-            </h1>
-            <p className="py-6 text-neutral-200">
-              Join thousands of professionals who are already using Digitools to
-              work smarter.
-              <br />
-              Start your free trial today.
-            </p>
-            <div className=" flex gap-4 justify-center">
-              <button className="btn bg-white text-purple-500 rounded-full">
-                Explore Products
-              </button>
-              <button className="btn btn-outline  text-white rounded-full">
-                Get Started
-              </button>
-            </div>
-            <p className="text-neutral-200">
-              14-day free trial • No credit card required • Cancel anytime
-            </p>
-          </div>
+    <section className="bg-linear-to-r from-[#5a2ef6] to-[#b217f7] py-20">
+      <div className="container mx-auto px-4 text-center">
+        <h1 className="font-extrabold text-5xl text-white leading-tight">
+          Ready To Transform Your Workflow?
+        </h1>
+        <p className="pt-5 text-sm text-white/80 leading-6">
+          Join thousands of professionals who are already using DigiTools to
+          work smarter.
+          <br />
+          Start your free trial today.
+        </p>
+        <div className="flex gap-4 justify-center pt-7">
+          <button className="btn h-10 min-h-10 px-6 rounded-full bg-white text-[#6f2ef6] border-none font-semibold hover:bg-white/90">
+            Explore Products
+          </button>
+          <button className="btn h-10 min-h-10 px-6 rounded-full bg-transparent border border-white text-white font-semibold hover:bg-white/10">
+            View Pricing
+          </button>
         </div>
+        <p className="pt-5 text-xs text-white/75">
+          14-day free trial • No credit card required • Cancel anytime
+        </p>
       </div>
-    </div>
+    </section>
   );
 };
 

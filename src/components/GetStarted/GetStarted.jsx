@@ -3,64 +3,72 @@ import React from "react";
 
 const GetStarted = () => {
   return (
-    <div className="bg-[#F9FAFC] pb-30 pt-30">
-      <div className="container mx-auto">
-        <div className="text-center flex gap-4 flex-col">
-          <h1 className="font-extrabold text-5xl text-[#101727]">
+    <section className="bg-[#f5f7fb] py-24">
+      <div className="container mx-auto px-4">
+        <div className="text-center flex flex-col gap-3">
+          <h1 className="font-extrabold text-5xl text-[#101727] leading-tight">
             Get Started in 3 Steps
           </h1>
-          <p className="text-[#627382] text-base">
+          <p className="text-[#7a8699] text-sm">
             Start using premium digital tools in minutes, not hours.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
-          <div className="card card-border bg-base-100 shadow-md">
-            <div className="flex justify-end">
-              <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] m-2 p-2 w-10 h-10 rounded-full">
-                <p className="text-white text-center">01</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+          <div className="card border border-[#e8ebf1] bg-white shadow-xs rounded-xl">
+            <div className="flex justify-end pt-2 pr-2">
+              <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] w-6 h-6 rounded-full flex items-center justify-center">
+                <p className="text-white text-[10px] font-semibold">01</p>
               </div>
             </div>
-            <div className="card-body text-center items-center">
-              <div className="bg-purple-100 p-4 rounded-full w-fit">
-                <LucideUser size={64} color="#9514FA" />
+            <div className="card-body text-center items-center pt-2 pb-8">
+              <div className="bg-[#efe7ff] p-4 rounded-full w-fit">
+                <LucideUser size={34} color="#6f2ef6" />
               </div>
-              <h2 className="card-title text-2xl">Create Account</h2>
-              <p className="mb-22 text-base text-neutral-500">
+              <h2 className="card-title text-[31px] sm:text-2xl lg:text-[30px] font-semibold text-[#101727]">
+                Create Account
+              </h2>
+              <p className="text-sm text-[#7a8699] leading-6">
                 Sign up for free in seconds. No credit card
                 <br /> required to get started.
               </p>
             </div>
           </div>
-          <div className="card card-border bg-base-100 shadow-md">
-            <div className="flex justify-end">
-              <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] m-2 p-2 w-10 h-10 rounded-full">
-                <p className="text-white text-center">02</p>
+
+          <div className="card border border-[#e8ebf1] bg-white shadow-xs rounded-xl">
+            <div className="flex justify-end pt-2 pr-2">
+              <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] w-6 h-6 rounded-full flex items-center justify-center">
+                <p className="text-white text-[10px] font-semibold">02</p>
               </div>
             </div>
-            <div className="card-body text-center items-center">
-              <div className="bg-purple-100 p-4 rounded-full w-fit">
-                <LucideBox size={64} color="#9514FA" />
+            <div className="card-body text-center items-center pt-2 pb-8">
+              <div className="bg-[#efe7ff] p-4 rounded-full w-fit">
+                <LucideBox size={34} color="#6f2ef6" />
               </div>
-              <h2 className="card-title text-2xl">Browse Tools</h2>
-              <p className="mb-22 text-base text-neutral-500">
+              <h2 className="card-title text-[31px] sm:text-2xl lg:text-[30px] font-semibold text-[#101727]">
+                Choose Products
+              </h2>
+              <p className="text-sm text-[#7a8699] leading-6">
                 Browse our catalog and select the tools
                 <br />
                 that fit your needs.
               </p>
             </div>
           </div>
-          <div className="card card-border bg-base-100 shadow-md">
-            <div className="flex justify-end">
-              <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] m-2 p-2 w-10 h-10 rounded-full">
-                <p className="text-white text-center">03</p>
+
+          <div className="card border border-[#e8ebf1] bg-white shadow-xs rounded-xl">
+            <div className="flex justify-end pt-2 pr-2">
+              <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] w-6 h-6 rounded-full flex items-center justify-center">
+                <p className="text-white text-[10px] font-semibold">03</p>
               </div>
             </div>
-            <div className="card-body text-center items-center">
-              <div className="bg-purple-100 p-4 rounded-full w-fit">
-                <LucideRocket size={64} color="#9514FA" />
+            <div className="card-body text-center items-center pt-2 pb-8">
+              <div className="bg-[#efe7ff] p-4 rounded-full w-fit">
+                <LucideRocket size={34} color="#6f2ef6" />
               </div>
-              <h2 className="card-title text-2xl">Start Creating</h2>
-              <p className="mb-22 text-base text-neutral-500">
+              <h2 className="card-title text-[31px] sm:text-2xl lg:text-[30px] font-semibold text-[#101727]">
+                Start Creating
+              </h2>
+              <p className="text-sm text-[#7a8699] leading-6">
                 Download and start using your premium <br />
                 tools immediately.
               </p>
@@ -68,7 +76,7 @@ const GetStarted = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -2,37 +2,35 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="container mx-auto mt-30 mb-30">
-      {/* Header */}
-      <div className="text-center flex gap-4 flex-col mb-10">
-        <h1 className="font-extrabold text-5xl text-[#101727]">
+    <section className="bg-white py-24">
+      <div className="container mx-auto px-4">
+      <div className="text-center flex gap-3 flex-col mb-12">
+        <h1 className="font-extrabold text-5xl text-[#101727] leading-tight">
           Simple, Transparent Pricing
         </h1>
-        <p className="text-[#627382] text-base">
+        <p className="text-[#7a8699] text-sm">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
 
-      {/* Cards */}
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 items-stretch">
-        {/* Starter */}
-        <div className="card bg-base-100 shadow-sm h-full">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 items-stretch">
+        <div className="card bg-white border border-[#e8ebf1] rounded-xl h-full">
           <div className="card-body flex flex-col h-full">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold">Starter</h2>
-              <p className="text-base text-neutral-400">
+              <h2 className="text-3xl font-bold text-[#101727]">Starter</h2>
+              <p className="text-sm text-[#7a8699]">
                 Perfect for getting started
               </p>
-              <p className="text-4xl font-medium">
-                $0<span className="text-base text-neutral-500">/Month</span>
+              <p className="text-5xl font-bold text-[#101727]">
+                $0<span className="text-base text-[#7a8699] font-normal">/Month</span>
               </p>
             </div>
 
-            <ul className="mt-6 flex flex-col gap-2 flex-1">
-              <li>
+            <ul className="mt-6 flex flex-col gap-2 flex-1 text-sm text-[#627382]">
+              <li className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
+                  className="size-4 text-success"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -44,12 +42,12 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                High-resolution image generation
+                Access to 10 free tools
               </li>
-              <li>
+              <li className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
+                  className="size-4 text-success"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -61,12 +59,12 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Customizable style templates
+                Basic templates
               </li>
-              <li>
+              <li className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
+                  className="size-4 text-success"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -78,42 +76,58 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Batch processing capabilities
+                Community support
+              </li>
+              <li className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                1 project per month
               </li>
             </ul>
 
             <div className="mt-auto">
-              <button className="btn btn-primary w-full rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r">
+              <button className="btn btn-primary w-full rounded-full bg-linear-to-r from-[#6f2ef6] to-[#9128f7] border-none hover:from-[#6329de] hover:to-[#7f22d8]">
                 Get Started Free
               </button>
             </div>
           </div>
         </div>
 
-        {/* Pro */}
-        <div className="card bg-linear-to-l from-[#9514fa] to-[#4f39f6] shadow-sm h-full">
+        <div className="card bg-linear-to-r from-[#6f2ef6] to-[#9128f7] rounded-xl h-full relative">
           <div className="card-body flex flex-col h-full">
-            <div className="flex justify-center p-2">
-              <span className="badge badge-md badge-soft bg-amber-100 border border-amber-100 text-red-800 rounded-full -mt-11">
+            <div className="flex justify-center">
+              <span className="badge badge-md bg-[#ffd88f] border-none text-[#8b4f00] rounded-full -mt-6 font-semibold">
                 Most Popular
               </span>
             </div>
 
             <div className="space-y-2">
               <h2 className="text-3xl font-bold text-white">Pro</h2>
-              <p className="text-base text-white">
-                Perfect for getting started
+              <p className="text-sm text-white/85">
+                Best for professionals
               </p>
-              <p className="text-4xl text-white font-medium">
-                $29<span className="text-base text-neutral-200">/Month</span>
+              <p className="text-5xl text-white font-bold">
+                $29<span className="text-base text-white/80 font-normal">/Month</span>
               </p>
             </div>
 
-            <ul className="mt-6 flex flex-col gap-2 flex-1 text-white">
-              <li>
+            <ul className="mt-6 flex flex-col gap-2 flex-1 text-white text-sm">
+              <li className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
+                  className="size-4 text-white"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -125,12 +139,12 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                High-resolution image generation
+                Access to all premium tools
               </li>
-              <li>
+              <li className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
+                  className="size-4 text-white"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -142,46 +156,12 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Customizable style templates
+                Unlimited templates
               </li>
-              <li>
+              <li className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                Batch processing capabilities
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                Advanced AI tools
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
+                  className="size-4 text-white"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -195,10 +175,61 @@ const Pricing = () => {
                 </svg>
                 Priority support
               </li>
+              <li className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Unlimited projects
+              </li>
+              <li className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Cloud sync
+              </li>
+              <li className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Advanced analytics
+              </li>
             </ul>
 
             <div className="mt-auto">
-              <button className="btn w-full rounded-full bg-white">
+              <button className="btn w-full rounded-full bg-white border-none">
                 <span className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] bg-clip-text text-transparent">
                   Start Pro Trial
                 </span>
@@ -207,24 +238,23 @@ const Pricing = () => {
           </div>
         </div>
 
-        {/* Enterprise */}
-        <div className="card bg-base-100 shadow-sm h-full">
+        <div className="card bg-white border border-[#e8ebf1] rounded-xl h-full">
           <div className="card-body flex flex-col h-full">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold">Enterprise</h2>
-              <p className="text-base text-neutral-400">
+              <h2 className="text-3xl font-bold text-[#101727]">Enterprise</h2>
+              <p className="text-sm text-[#7a8699]">
                 For teams and businesses
               </p>
-              <p className="text-4xl font-medium">
-                $99<span className="text-base">/Month</span>
+              <p className="text-5xl font-bold text-[#101727]">
+                $99<span className="text-base text-[#7a8699] font-normal">/Month</span>
               </p>
             </div>
 
-            <ul className="mt-6 flex flex-col gap-2 flex-1">
-              <li>
+            <ul className="mt-6 flex flex-col gap-2 flex-1 text-sm text-[#627382]">
+              <li className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
+                  className="size-4 text-success"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -236,12 +266,12 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                High-resolution image generation
+                Everything in Pro
               </li>
-              <li>
+              <li className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
+                  className="size-4 text-success"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -253,46 +283,12 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Customizable style templates
+                Team collaboration
               </li>
-              <li>
+              <li className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                Batch processing capabilities
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                Dedicated support
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
+                  className="size-4 text-success"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -306,17 +302,69 @@ const Pricing = () => {
                 </svg>
                 Custom integrations
               </li>
+              <li className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Dedicated support
+              </li>
+              <li className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                SLA guarantee
+              </li>
+              <li className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Custom branding
+              </li>
             </ul>
 
             <div className="mt-auto">
-              <button className="btn btn-primary w-full rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r">
+              <button className="btn btn-primary w-full rounded-full bg-linear-to-r from-[#6f2ef6] to-[#9128f7] border-none hover:from-[#6329de] hover:to-[#7f22d8]">
                 Contact Sales
               </button>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
   );
 };
 

@@ -67,9 +67,14 @@ const NavBar = () => {
 
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="btn btn-ghost btn-circle"
+              className="btn btn-ghost btn-circle text-black hover:bg-gray-100"
+              aria-label={isOpen ? "Close menu" : "Open menu"}
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? (
+                <X size={24} className="text-black stroke-[2.5]" />
+              ) : (
+                <Menu size={24} className="text-black stroke-[2.5]" />
+              )}
             </button>
           </div>
         </div>

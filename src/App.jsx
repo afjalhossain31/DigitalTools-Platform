@@ -1,5 +1,6 @@
 import "./App.css";
 import GetStarted from "./components/GetStarted/GetStarted";
+import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import NavBar from "./components/NavBar/NavBar";
 import Pricing from "./components/Pricing/Pricing";
@@ -22,6 +23,8 @@ function App() {
         <Pricing />
 
         <ReadyTransform />
+
+        <Footer />
       </div>
     </>
   );
