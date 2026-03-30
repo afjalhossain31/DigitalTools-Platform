@@ -1,16 +1,28 @@
-# React + Vite
+# Digital Tools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive digital tools marketplace UI built with React, featuring product browsing, cart interactions, toast notifications, and a polished user experience across devices.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- Tailwind CSS
+- DaisyUI
+- React Toastify
+- Font Awesome
 
-## React Compiler
+## Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Product to cart flow with instant UI feedback:
+	Buy Now adds selected products to cart and updates cart status in real time.
+- Smart cart experience:
+	Add, remove, and checkout actions are supported with toast alerts for each step.
+- Fully responsive design:
+	Optimized layouts for desktop, tablet, and mobile across all major sections.
 
-## Expanding the ESLint configuration
+## Project Highlights
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Clean, component-based structure
+- Smooth hover effects and modern gradient styling
+- Dynamic JSON-driven product listing
+

@@ -33,7 +33,7 @@ const Cart = ({ cartItems, onRemoveItem, onCheckout }) => {
                     </div>
                   </div>
                   <button
-                    onClick={() => onRemoveItem(item.id)}
+                    onClick={() => onRemoveItem(item)}
                     className="text-sm text-pink-500 hover:text-pink-600 font-medium self-end sm:self-auto"
                   >
                     Remove
