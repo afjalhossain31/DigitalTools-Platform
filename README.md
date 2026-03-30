@@ -1,15 +1,16 @@
-# Digital Tools Platform
+# Digital Tools Buying Website
 
 A modern and responsive digital tools marketplace UI built with React, featuring product browsing, cart interactions, toast notifications, and a polished user experience across devices.
 
-## Tech Stack
+## Technologies Stack
 
-- React
+- React.js
 - Vite
+- JavaScript (ES6+)
 - Tailwind CSS
 - DaisyUI
-- React Toastify
-- Font Awesome
+- React-Toastify (NPM Package)
+- JSON (for product data)
 
 ## Key Features
 
