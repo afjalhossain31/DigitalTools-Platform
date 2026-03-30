@@ -41,7 +41,7 @@ const GetStarted = () => {
               <div className="bg-purple-100 p-4 rounded-full w-fit">
                 <LucideBox size={64} color="#9514FA" />
               </div>
-              <h2 className="card-title text-2xl">Create Account</h2>
+              <h2 className="card-title text-2xl">Browse Tools</h2>
               <p className="mb-22 text-base text-neutral-500">
                 Browse our catalog and select the tools
                 <br />

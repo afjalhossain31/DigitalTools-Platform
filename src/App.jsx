@@ -12,8 +12,6 @@ function App() {
     <>
       <div>
         <NavBar />
-        <div className="divider"></div>
-
         <Hero />
         <Stats />
 
