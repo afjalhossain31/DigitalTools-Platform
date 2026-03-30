@@ -6,7 +6,7 @@ const AllProducts = () => {
   const [activeTab, setActiveTab] = useState("products");
 
   return (
-    <div className="bg-gradient-to-b from-white via-[#f5f5f5] to-white py-20">
+    <div className="bg-linear-to-b from-white via-[#f5f5f5] to-white py-20">
       <div className="container mx-auto px-4 space-y-8">
         <div className="text-center flex gap-4 flex-col">
           <h1 className="font-extrabold text-5xl text-[#101727]">

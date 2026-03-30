@@ -114,7 +114,7 @@ const Cards = () => {
             <div className="card-body p-6">
               {/* Badge and Icon */}
               <div className="flex justify-between items-start gap-3 mb-4">
-                <div className={`p-4 bg-gradient-to-br ${product.bgColor} rounded-xl`}>
+                <div className={`p-4 bg-linear-to-br ${product.bgColor} rounded-xl`}>
                   <img className="h-8 w-8" src={product.image} alt={product.name} />
                 </div>
                 <span className={`badge badge-sm badge-soft ${product.badgeColor} text-xs font-semibold`}>
@@ -144,7 +144,7 @@ const Cards = () => {
                   <li key={idx} className="flex items-center gap-2 text-sm text-gray-700">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="size-4 text-green-600 flex-shrink-0"
+                      className="size-4 text-green-600 shrink-0"
                       viewBox="0 0 24 24"
                       fill="currentColor"
                     >

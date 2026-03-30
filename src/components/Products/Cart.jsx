@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import writingImg from "../../assets/products/writing_2327400 1.png";
 import designImg from "../../assets/products/design-tool.png";
-import portfolioImg from "../../assets/products/portfolio.png";
 import { Trash2 } from "lucide-react";
 
 const Cart = () => {

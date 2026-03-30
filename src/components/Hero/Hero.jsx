@@ -5,7 +5,7 @@ import dotImg from "../../assets/dot.svg";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-br from-white via-[#f8f9fb] to-[#f0f4ff] min-h-screen flex items-center relative overflow-hidden">
+    <div className="bg-linear-to-br from-white via-[#f8f9fb] to-[#f0f4ff] min-h-screen flex items-center relative overflow-hidden">
       {/* Decorative circles */}
       <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-200 rounded-full opacity-20 blur-3xl"></div>
       <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-blue-200 rounded-full opacity-10 blur-3xl"></div>
@@ -32,7 +32,7 @@ const Hero = () => {
             </p>
             
             <div className="flex gap-4 flex-wrap">
-              <button className="btn btn-primary rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r from-[#9514fa] to-[#4f39f6] text-base font-semibold text-white border-none">
+              <button className="btn btn-primary rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r text-base font-semibold text-white border-none">
                 Explore Products
               </button>
               <button className="btn btn-outline btn-primary rounded-full text-base font-semibold border-2">
@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative h-96 lg:h-[500px] flex items-center justify-center">
+          <div className="relative h-96 lg:h-125 flex items-center justify-center">
             <div className="relative w-full h-full">
               <img 
                 src={bannerImg} 
@@ -50,7 +50,7 @@ const Hero = () => {
                 className="w-full h-full object-contain drop-shadow-2xl"
               />
               {/* Decorative background circle for image */}
-              <div className="absolute inset-0 -z-10 bg-gradient-to-br from-purple-100 to-blue-100 rounded-3xl blur-2xl opacity-30"></div>
+              <div className="absolute inset-0 -z-10 bg-linear-to-br from-purple-100 to-blue-100 rounded-3xl blur-2xl opacity-30"></div>
             </div>
           </div>
         </div>
