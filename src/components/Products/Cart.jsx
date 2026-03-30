@@ -1,4 +1,5 @@
 import React from "react";
+import { LucideShoppingCart } from "lucide-react";
 
 const Cart = ({ cartItems, onRemoveItem, onCheckout }) => {
   const total = cartItems.reduce((sum, item) => sum + item.price, 0);
@@ -7,9 +8,16 @@ const Cart = ({ cartItems, onRemoveItem, onCheckout }) => {
     <div className="container mx-auto mt-6 sm:mt-10 mb-10">
       {cartItems.length === 0 ? (
         <div className="card bg-white border border-[#e8ebf1] rounded-2xl">
-          <div className="card-body py-14 sm:py-18 text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#101727]">Your Cart</h2>
-            <p className="text-sm sm:text-base text-[#627382] mt-2">Your cart is empty.</p>
+          <div className="card-body py-10 sm:py-12">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#101727] text-left w-full">
+              Your Cart
+            </h2>
+            <div className="flex flex-col items-center gap-3">
+              <div className="w-16 h-16 rounded-full bg-[#f7f8fb] border border-[#e8ebf1] flex items-center justify-center">
+                <LucideShoppingCart size={30} className="text-[#4a5568]" />
+              </div>
+              <p className="text-sm sm:text-base text-[#627382]">Your cart is empty.</p>
+            </div>
           </div>
         </div>
       ) : (

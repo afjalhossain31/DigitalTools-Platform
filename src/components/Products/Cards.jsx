@@ -17,6 +17,16 @@ const Cards = ({ onAddToCart, cartItems = [] }) => {
     shopping: shoppingImg,
   };
 
+  const getBadgeClass = (badge) => {
+    if (badge === "Best Seller") {
+      return "bg-[#fff3dc] text-[#c7861a] border-[#f6deb0]";
+    }
+    if (badge === "Popular") {
+      return "bg-[#ece9ff] text-[#7a69e8] border-[#d8d1ff]";
+    }
+    return "bg-[#e9fbef] text-[#2f9b61] border-[#c9f0d8]";
+  };
+
   return (
     <div className="container mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
@@ -38,7 +48,11 @@ const Cards = ({ onAddToCart, cartItems = [] }) => {
                     alt={product.name}
                   />
                 </div>
-                <span className={`badge badge-sm badge-soft ${product.badgeColor} text-xs font-semibold`}>
+                <span
+                  className={`badge badge-sm border text-xs font-semibold ${getBadgeClass(
+                    product.badge
+                  )}`}
+                >
                   {product.badge}
                 </span>
               </div>

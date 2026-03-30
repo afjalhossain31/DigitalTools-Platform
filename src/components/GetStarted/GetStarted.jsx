@@ -14,7 +14,7 @@ const GetStarted = () => {
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 sm:mt-12">
-          <div className="card border border-[#e8ebf1] bg-white shadow-xs rounded-xl">
+          <div className="card border border-[#e8ebf1] bg-white shadow-xs rounded-xl hover:shadow-md hover:-translate-y-1 hover:border-[#dcd1ff] transition-all duration-300">
             <div className="flex justify-end pt-2 pr-2">
               <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] w-6 h-6 rounded-full flex items-center justify-center">
                 <p className="text-white text-[10px] font-semibold">01</p>
@@ -34,7 +34,7 @@ const GetStarted = () => {
             </div>
           </div>
 
-          <div className="card border border-[#e8ebf1] bg-white shadow-xs rounded-xl">
+          <div className="card border border-[#e8ebf1] bg-white shadow-xs rounded-xl hover:shadow-md hover:-translate-y-1 hover:border-[#dcd1ff] transition-all duration-300">
             <div className="flex justify-end pt-2 pr-2">
               <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] w-6 h-6 rounded-full flex items-center justify-center">
                 <p className="text-white text-[10px] font-semibold">02</p>
@@ -55,7 +55,7 @@ const GetStarted = () => {
             </div>
           </div>
 
-          <div className="card border border-[#e8ebf1] bg-white shadow-xs rounded-xl">
+          <div className="card border border-[#e8ebf1] bg-white shadow-xs rounded-xl hover:shadow-md hover:-translate-y-1 hover:border-[#dcd1ff] transition-all duration-300">
             <div className="flex justify-end pt-2 pr-2">
               <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] w-6 h-6 rounded-full flex items-center justify-center">
                 <p className="text-white text-[10px] font-semibold">03</p>
