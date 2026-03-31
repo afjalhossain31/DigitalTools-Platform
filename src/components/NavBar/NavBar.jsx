@@ -10,12 +10,12 @@ const NavBar = ({ cartCount = 0 }) => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <a href="#" className="text-3xl font-bold bg-linear-to-l from-[#9514fa] to-[#4f39f6] bg-clip-text text-transparent no-underline">
-            DigiTools
+            Digital Tools
           </a>
 
           {/* Desktop Menu - Center */}
           <div className="hidden lg:flex gap-10 items-center">
-            <a href="#products" className="text-base text-gray-700 font-medium hover:text-purple-600 transition no-underline">
+            <a href="#products" className="text-base text-gray-700 font-medium hover:text-purple-600 transition no-underline ">
               Products
             </a>
             <a href="#features" className="text-base text-gray-700 font-medium hover:text-purple-600 transition no-underline">
@@ -54,6 +54,7 @@ const NavBar = ({ cartCount = 0 }) => {
             </button>
           </div>
 
+
           {/* Mobile Menu Toggle */}
           <div className="lg:hidden flex items-center gap-4">
             <button className="btn btn-ghost btn-circle relative">
@@ -78,6 +79,7 @@ const NavBar = ({ cartCount = 0 }) => {
             </button>
           </div>
         </div>
+
 
         {/* Mobile Menu */}
         {isOpen && (

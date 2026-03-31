@@ -32,7 +32,7 @@ const Hero = () => {
             </p>
             
             <div className="flex gap-3 sm:gap-4 flex-wrap">
-              <button className="btn btn-primary rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r text-base font-semibold text-white border-none">
+              <button className="btn btn-primary rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r text-base font-semibold text-white border-none ">
                 Explore Products
               </button>
               <button className="btn btn-outline btn-primary rounded-full text-base font-semibold border-2">
